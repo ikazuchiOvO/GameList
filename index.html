@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美观表格示例</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* 标题行样式 */
+        thead tr {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* 表格边框 */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        /* 鼠标悬停效果 */
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* 奇偶行颜色区分 */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #333;">项目进度表</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>项目名称</th>
+                <th>状态</th>
+                <th>截止日期</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>项目A</td>
+                <td>进行中</td>
+                <td>2024-01-15</td>
+            </tr>
+            <tr>
+                <td>项目B</td>
+                <td>待审核</td>
+                <td>2024-01-20</td>
+            </tr>
+            <tr>
+                <td>项目C</td>
+                <td>已完成</td>
+                <td>2024-01-10</td>
+            </tr>
+            <tr>
+                <td>项目D</td>
+                <td>延期</td>
+                <td>2024-01-25</td>
+            </tr>
+            <tr>
+                <td>项目E</td>
+                <td>进行中</td>
+                <td>2024-01-30</td>
+            </tr>
+            <tr>
+                <td>项目F</td>
+                <td>待启动</td>
+                <td>2024-02-05</td>
+            </tr>
+            <tr>
+                <td>项目G</td>
+                <td>已完成</td>
+                <td>2024-01-28</td>
+            </tr>
+            <tr>
+                <td>项目H</td>
+                <td>进行中</td>
+                <td>2024-02-10</td>
+            </tr>
+            <tr>
+                <td>项目I</td>
+                <td>待审核</td>
+                <td>2024-02-15</td>
+            </tr>
+            <tr>
+                <td>项目J</td>
+                <td>延期</td>
+                <td>2024-02-20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
